@@ -1,0 +1,15 @@
+class Solution{
+public static void solution(int[] arr, int i, int sum ){
+if (sum>k)
+return false;
+if(i == arr.length){
+return sum == k;
+}
+if(helper(arr, i + 1 , k, sum + arr[i])){
+return true;
+}
+if(helper(arr, i+1, k, sum)){
+return false;
+}
+}
+}
