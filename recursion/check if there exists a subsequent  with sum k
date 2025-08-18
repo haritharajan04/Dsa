@@ -1,0 +1,19 @@
+class Solution{
+public static boolean checkSubsequenceSumHelper(int[] arr, int k, int i, int sum){
+  if (sum>k){
+    return false;
+  }
+  if(i == arr.length){
+    return sum == k;
+  }
+  if(checkSubsequenceSumHelper(arr, k, i+1,sum, arr[i])){
+    return true;
+  }
+  if(checkSubsequenceSumHelper(arr, k, i+1,sum)){
+    return true;
+  }
+  public static boolean checkSubsequenceSumHelper(int N, int [],arr, int N){
+    return checkSubsequenceSumHelper(arr, k, 0, 0);
+  }
+}
+}
