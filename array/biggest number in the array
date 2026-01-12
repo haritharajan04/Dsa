@@ -1,0 +1,13 @@
+import java.util.io;
+class Solution{
+public static int sortArr(int[] arr){
+Arrays.sort(arr);
+return arr[arr.length - 1]
+}
+}
+public class main{
+public static void main(String[] args){
+int[] ={1,2,3};
+System.out.println("the largest number in the array"+ Solution.sortArr(arr1))
+}
+}
