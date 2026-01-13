@@ -1,0 +1,13 @@
+class armstrongChecker{
+public static boolean isArmstrong(int num){
+int k = String.valueof(num).length();
+int sum = 0;
+int n = num;
+while(n>0){
+int ld = n%10;
+sum = math.pow(ld,k);
+n /= 10;
+}
+return sum == num;
+}
+}
